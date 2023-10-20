@@ -13,8 +13,8 @@
       "id": 2
     },
     {
-      "listName": "Jack",
-      "id": 3
+      "listName": "SURIVIVED PHASE 2/4",
+      "id": 4
     }
   ],
   "cocktails": [
@@ -64,11 +64,6 @@
       "id": 11747
     },
     {
-      "idDrink": 11004,
-      "cocktailListId": 3,
-      "id": 11748
-    },
-    {
       "idDrink": 13621,
       "cocktailListId": 2,
       "id": 11749
@@ -77,6 +72,21 @@
       "idDrink": 11002,
       "cocktailListId": 0,
       "id": 11750
+    },
+    {
+      "idDrink": 178332,
+      "cocktailListId": 0,
+      "id": 11751
+    },
+    {
+      "idDrink": 178332,
+      "cocktailListId": 4,
+      "id": 11752
+    },
+    {
+      "idDrink": 16984,
+      "cocktailListId": 4,
+      "id": 11754
     }
   ]
 }

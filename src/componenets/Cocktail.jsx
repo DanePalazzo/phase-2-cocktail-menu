@@ -36,9 +36,6 @@ function Cocktail({cocktail, cocktails, setCocktails, cocktailLists, setCocktail
     setShowDetails(!showDetails)
   }
 
-  console.log(cocktailInfo)
-
-  
 
   return (
     <div className="flex grid-rows-1 justify-center flex-auto">

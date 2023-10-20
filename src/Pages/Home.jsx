@@ -5,17 +5,17 @@ function Home({cocktailLists, setCocktailLists}) {
   let FeaturedListRandom = Math.floor(Math.random() * cocktailLists.length)
   let FeaturedList = cocktailLists[FeaturedListRandom]
 
- const handleRender = ()=>{
-    return (
-        <List list={FeaturedList} cocktailLists={cocktailLists} setCocktailLists={setCocktailLists}/>
-    );
-}
+//  const handleRender = ()=>{
+//     return (
+//         <List list={FeaturedList} cocktailLists={cocktailLists} setCocktailLists={setCocktailLists}/>
+//     );
+// }
 
-const delayedRender = () => {
-    setTimeout(() => {
-        handleRender();
-    }, 100); // 100 milliseconds delay
-}
+// const delayedRender = () => {
+//     setTimeout(() => {
+//         handleRender();
+//     }, 100); // 100 milliseconds delay
+// }
 
   return (
     <div>

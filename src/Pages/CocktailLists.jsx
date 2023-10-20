@@ -23,6 +23,7 @@ function CocktailLists( {cocktailLists, setCocktailLists} ) {
       .then(res=> res.json())
       .then(res => {
         setCocktailLists([...cocktailLists, res])
+        setListNameValue("")
         console.log(cocktailLists)
       })
     }
@@ -31,7 +32,7 @@ function CocktailLists( {cocktailLists, setCocktailLists} ) {
 
   return (
     <div>
-      <h2 className="text-4xl font-bold">Cocktail Menues</h2>
+      <h2 className="text-4xl font-bold">Cocktail Menus</h2>
       <div>
         <form className="newListForm" onSubmit={(e) => handleAddList(e)}>
           <input className="shadow-inner w-2/4 h-8" placeholder="Type list name here..." value={listNameValue} onChange={(e) => setListNameValue(e.target.value)} />

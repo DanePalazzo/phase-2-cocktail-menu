@@ -12,25 +12,37 @@ function List({list, cocktailLists, setCocktailLists}) {
       // console.log(list.id)
       // console.log(cocktailLists)
       // console.log(updatedCocktailLists)
+      // console.log(cocktails)
 
 
       function handleDeleteList(){
         if(confirm("Are you sure you want to delete this list?") === true){
-          cocktails.map((cocktail) => {
-            fetch(`http://localhost:3000/cocktails/${cocktail.id}`, {
+          if(cocktails === undefined){
+            fetch(`http://localhost:3000/cocktailList/${list.id}`, {
               method: "DELETE"
             })
             .then(res => res.json())
-          });
-
-          fetch(`http://localhost:3000/cocktailList/${list.id}`, {
-            method: "DELETE"
-          })
-          .then(res => res.json())
-          .then(() => {
-            const updatedCocktailLists = cocktailLists.filter((fList) => fList.id !== list.id)
-            setCocktailLists(updatedCocktailLists);
-          })
+            .then(() => {
+              const updatedCocktailLists = cocktailLists.filter((fList) => fList.id !== list.id)
+              setCocktailLists(updatedCocktailLists);
+            })
+          } else{
+            cocktails.map((cocktail) => {
+              fetch(`http://localhost:3000/cocktails/${cocktail.id}`, {
+                method: "DELETE"
+              })
+              .then(res => res.json())
+            });
+  
+            fetch(`http://localhost:3000/cocktailList/${list.id}`, {
+              method: "DELETE"
+            })
+            .then(res => res.json())
+            .then(() => {
+              const updatedCocktailLists = cocktailLists.filter((fList) => fList.id !== list.id)
+              setCocktailLists(updatedCocktailLists);
+            })  
+          }
         }else{
           console.log("Canceled")
         }

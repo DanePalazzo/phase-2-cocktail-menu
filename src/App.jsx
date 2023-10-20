@@ -33,7 +33,8 @@ function App() {
     fetch("http://localhost:3000/CocktailLists")
     .then(res => res.json())
     .then(res => setCocktailLists(res))
-  }, [])
+  }, [cocktailLists.length])
+
 
   return (
     <div className='object-top'>
