@@ -1,0 +1,82 @@
+{
+  "cocktailList": [
+    {
+      "id": 0,
+      "listName": "Halloween Party"
+    },
+    {
+      "listName": "New List",
+      "id": 1
+    },
+    {
+      "listName": "Fancy DrAnkz",
+      "id": 2
+    },
+    {
+      "listName": "Jack",
+      "id": 3
+    }
+  ],
+  "cocktails": [
+    {
+      "id": 11007,
+      "idDrink": 11007,
+      "cocktailListId": 0
+    },
+    {
+      "idDrink": 11008,
+      "cocktailListId": 1,
+      "id": 11729
+    },
+    {
+      "idDrink": 178345,
+      "cocktailListId": 0,
+      "id": 11731
+    },
+    {
+      "idDrink": 11003,
+      "cocktailListId": 0,
+      "id": 11732
+    },
+    {
+      "idDrink": 12528,
+      "cocktailListId": 0,
+      "id": 11733
+    },
+    {
+      "idDrink": 11003,
+      "cocktailListId": 2,
+      "id": 11734
+    },
+    {
+      "idDrink": 15997,
+      "cocktailListId": 0,
+      "id": 11744
+    },
+    {
+      "idDrink": 11003,
+      "cocktailListId": 0,
+      "id": 11746
+    },
+    {
+      "idDrink": 17248,
+      "cocktailListId": 0,
+      "id": 11747
+    },
+    {
+      "idDrink": 11004,
+      "cocktailListId": 3,
+      "id": 11748
+    },
+    {
+      "idDrink": 13621,
+      "cocktailListId": 2,
+      "id": 11749
+    },
+    {
+      "idDrink": 11002,
+      "cocktailListId": 0,
+      "id": 11750
+    }
+  ]
+}
