@@ -5,16 +5,13 @@ function Home({cocktailLists, setCocktailLists}) {
   let FeaturedListRandom = Math.floor(Math.random() * cocktailLists.length)
   let FeaturedList = cocktailLists[FeaturedListRandom]
 
-  console.log(FeaturedListRandom)
-  console.log(FeaturedList)
-
-  function handleRender() {
+ const handleRender = ()=>{
     return (
         <List list={FeaturedList} cocktailLists={cocktailLists} setCocktailLists={setCocktailLists}/>
     );
 }
 
-function delayedRender() {
+const delayedRender = () => {
     setTimeout(() => {
         handleRender();
     }, 100); // 100 milliseconds delay
