@@ -36,7 +36,7 @@ import Result from '../componenets/Result'
         <h2>Search</h2>
         <form className="cocktail-search" onSubmit={(e) => handleNameSearch(e)}>
           <input placeholder="Type cocktail name here..." value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
-          <button type="submit">Search Cockatails</button>
+          <button type="submit">Search Cocktails</button>
         </form>
       </div>
       <div>
